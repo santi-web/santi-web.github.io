@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("form-registro");
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const nombre = document.getElementById("nombre").value.trim();
@@ -36,26 +36,32 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const nuevoUsuario = { nombre, password };
-
-    // Obtener usuarios existentes
     const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    // Verificar que no exista el mismo nombre
     const yaExiste = usuariosGuardados.some(u => u.nombre === nombre);
     if (yaExiste) {
       alert("El nombre de usuario ya está registrado.");
       return;
     }
 
+    const passwordHasheada = await hashPassword(password);
+    const nuevoUsuario = { nombre, password: passwordHasheada };
+
     usuariosGuardados.push(nuevoUsuario);
     localStorage.setItem("usuarios", JSON.stringify(usuariosGuardados));
-
-    // Guardar usuario y marcar sesión como activa con nombre del usuario
     localStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
-    localStorage.setItem("usuarioLogueado", nombre);  // Guardar el nombre para identificar usuario activo
+    localStorage.setItem("usuarioLogueado", nombre);
 
     alert("Cuenta creada con éxito.");
     window.location.href = "index.html";
   });
+
+  async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    return hashHex;
+  }
 });
