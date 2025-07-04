@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Nueva Receta</title>
+  <link rel="stylesheet" href="recetas.css">
+</head>
+<body>
+  <div class="enlace">
+    <a href="index.html">Recetario</a>
+    <button class="button">Registrar Nueva Receta</button>
+  </div>
+
+  <button onclick="window.location.href='index.html'" class="nav-btn">🡠</button>
+  <h1 id="modo-edicion"></h1>
+  <h1 id="titulo-formulario">Registrar nueva Receta</h1>
+
+  <form>
+    <div class="form.input">
+      <h4>Título</h4>
+      <input id="titulo" type="text" required>
+    </div>
+
+    <div>
+      <h4>Descripción</h4>
+      <input id="descripcion" type="text" required>
+    </div>
+
+    <div class="fila">
+      <div class="grupo-input">
+        <label for="ingrediente">Ingrediente</label>
+        <input type="text" id="ingrediente" class="ingrediente">
+      </div>
+
+      <div class="grupo-input cantidad">
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" min="1">
+      </div>
+      <div class="medida">
+        <label class="titulo-medida" for="medida">Medida:</label>
+<select id="ingrediente-medida" name="ingrediente" class="select">
+  <option value="Gramos">Gramos</option>
+  <option value="Kilos">Kilos</option>
+  <option value="Cucharada/s">Cucharada/s</option>
+  <option value="Litros">Litros</option>
+  <option value="Mililitros">Mililitros</option>
+  <option value="Unidad/es">Unidad/es</option>
+
+</select>
+
+      </div>
+      <button type="button" class="agregar-ingrediente">✚ Agregar ingrediente</button>
+    </div>
+
+    <div id="lista-ingredientes">
+      <h4>Lista de Ingredientes</h4>
+      <ul id="ingredientes-agregados"></ul>
+    </div>
+     <div class="fila">
+      <div class="grupo-input">
+        <label for="ingrediente">Pasos a Seguir</label>
+        <input type="text" id="pasos" class="ingrediente">
+      </div>
+        <div>
+      <button type="button" class="agregar-paso">✚ Agregar Pasos</button>
+    </div>
+    </div>
+ <div id="lista-pasos">
+      <ol id="pasos-agregados"></ol>
+    </div>
+
+    <div class="upload-container">
+      <label for="imageUpload" class="custom-upload-button">📷 Agregar foto</label>
+      <input type="file" id="imageUpload" accept="image/*">
+    </div>
+
+    <div style="margin-top: 10px;">
+      <img id="preview-imagen" src="" alt="Vista previa" style="max-width: 300px; display: none; border-radius: 10px;" />
+    </div>
+
+    <div>
+      <button type="submit" id="btn-submit" class="registro">Registrar receta</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+body{
+    margin: auto;
+    background-color: #ffffff;
+    
+
+}
+
+
+div{
+   padding: 20px; 
+}
+
+h4{
+    margin: auto;
+    font-family: sans-serif;
+}
+
+textarea{
+    min-height: 300px;
+    min-width: 720px;
+}
+
+input, textarea{
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 #0005;
+}
+
+h1{
+    font-family: sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.enlace{
+    width: 100%;
+    background-color: #a7dff2 ;
+    display: flex;
+  align-items: center;
+  gap: 33px;
+  box-sizing: border-box;
+    
+}
+
+a{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #1e1199;
+    text-decoration: none;
+
+    
+  }
+  .a{
+
+    font-size: 17px;
+    font-family: sans-serif;
+    border-bottom: solid #1e1199;
+      
+  }
+
+
+.fila {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cantidad{
+    width: 90px;
+    margin-left: 13px;
+}
+
+
+.fila button{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #BEBEBE;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 15px 0 #0005;
+    
+}
+
+.fila button:hover{
+  background-color: #4E4E4E;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imageUpload {
+  display: none; /* Oculta el input nativo */
+}
+
+.custom-upload-button {
+  background-color: #BEBEBE;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+   box-shadow: 0 0 15px 0 #0005;
+}
+
+.custom-upload-button:hover {
+  background-color: #4E4E4E;
+}
+
+.registro {
+    background-color: #3F62D3;
+    margin-left: 620px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 15px 0 #0005;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    color: white;
+}
+
+.registro:hover {
+  background-color: #04248a;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-input label {
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-bottom: 4px;
+  font-weight: 900;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 24px;
+  
+  height: 100%;
+}
+
+.button{
+  margin-left: 10px;
+color: #1e1199;
+border: none;
+cursor: pointer;
+border-radius: none;
+background-color: #a7dff2;
+font-size: 17px;
+font-family: sans-serif;
+border-bottom: solid #1e1199;
+}
+
+
+.nav-btn{
+  background-color: transparent;
+  color: #5548cc;
+  font-size:30px;
+  border: transparent;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: 500px;
+  margin-top: 30px;
+border-radius: 100%;
+}
+
+.titulo-medida{
+  font-family: sans-serif;
+  font-weight: bold;
+  }
+
+.medida{
+  margin-right: 40px;
+  margin-bottom: auto;
+}
+
+.select{
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 #0005;
+  padding: 5%
+}
+
+/* 🌐 Responsivo para tablets y celulares */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .enlace,
+  nav {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .fila {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .registro {
+    margin-left: 190px;
+  }
+
+  textarea {
+    min-width: 100%;
+    min-height: 200px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .receta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .receta-info button {
+    margin-left: 0;
+  }
+
+  .receta-info h2 {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .nav-btn {
+    margin-left: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modificar-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detalle-superior,
+  .detalle-inferior {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-ingrediente,
+  .card-p {
+    width: 100%;
+  }
+
+  .contenido-texto {
+    margin-top: 30px;
+  }
+}

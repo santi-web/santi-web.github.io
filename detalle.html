@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Receta</title>
+  <link rel="stylesheet" href="detalle.css">
+</head>
+<body id="pagina-detalle">
+  <header>
+    <nav>
+      <button onclick="window.location.href='index.html'" class="nava">Recetario</button>
+      <a href="registrar.html" class="navo">Registrar Nueva Receta</a>  
+    </nav>
+  </header>
+
+  
+  <!-- Botón Modificar -->
+  <div class="prime">
+    <button onclick="window.location.href='index.html'" class="nav-btn">🡠</button>
+    <button id="modificar-btn" class="modificar-btn">Modificar Receta</button>
+  </div>
+
+  <!-- Detalle superior: imagen + título + descripción -->
+  <main class="detalle-superior">
+    <div class="card-img">
+      <img id="imagen-receta" src="" alt="Imagen de receta">
+    </div>
+    
+    <div class="contenido-texto">
+      <h2 id="titulo-receta"></h2>
+      <div class="card-p">
+        <p id="descripcion-receta"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Ingredientes + Pasos -->
+  <main class="detalle-inferior">
+    <div class="card-ingrediente">
+      <h3>Ingredientes</h3>
+      <ul id="ingredientes-receta"></ul>
+    </div>
+
+    <div class="card-pasos">
+      <h3>Pasos</h3>
+      <ol id="pasos-receta"></ol>
+    </div>
+  </main>
+
+  <script src="recetario.js"></script>
+</body>
+</html>

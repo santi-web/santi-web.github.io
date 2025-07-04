@@ -1,0 +1,265 @@
+.detalle-superior {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+
+.card-img {
+  flex: 0 0 auto;
+}
+
+.detalle {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detalle h2 {
+  margin-top: 0;
+}
+
+.navo{
+    background-color: transparent;
+  color: #1e1199;
+  font-size: 17px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+ 
+}
+
+header {
+  background: #a7dff2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.nava {
+  background-color: transparent;
+  color: #1e1199;
+  font-size: 17px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 4px solid ;
+   
+}
+
+.nav-btn{
+background-color: transparent;
+  color: #5548cc;
+  font-size:30px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+
+
+.card-ingrediente{
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0 #0005;
+    margin: 20px;
+    width: 20%;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.card-img{
+    border: transparent;
+    box-shadow: 0 0 15px 0 #0005;
+    border-radius: 8px;
+    margin: 50px;
+    max-width: 50%;
+    max-height: 50%;
+  
+}
+
+
+
+
+.titulo{
+    margin-top: 75px;
+    font-size: 20px;
+}
+
+.card-pasos {
+    line-height: 50px;
+}
+
+p{
+    font-size: 28px;
+    text-align: justify;
+
+}
+
+.card-img img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+
+
+.contenido-texto {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 70px;
+}
+
+.contenido-texto h2 {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.detalle-inferior {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px;
+}
+
+.card-p{
+  width: 70%;
+}
+
+.modificar-btn {
+  background-color: transparent;
+  color: #2d88c4;
+  border: 2px solid #2d88c4;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  margin-left: 1300px;
+}
+
+.modificar-btn:hover {
+  background-color: #97d4fc;
+}
+
+
+/* 🌐 Responsivo para tablets y celulares */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .enlace,
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .fila {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .registro {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  textarea {
+    min-width: 100%;
+    min-height: 200px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .receta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .receta-info button {
+    margin-left: 0;
+  }
+
+  .receta-info h2 {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .nav-btn {
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modificar-btn {
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+  }
+
+  .detalle-superior,
+  .detalle-inferior {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-ingrediente,
+  .card-p {
+    width: 90%;
+  }
+
+  .contenido-texto {
+    margin-top: 30px;
+  }
+
+.prime{
+  display: flex;
+  margin-top: 30px;
+}
+
+}
+
+

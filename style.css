@@ -1,0 +1,255 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+  box-sizing: border-box;
+}
+
+header {
+  background: #a7dff2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nava {
+  background-color: transparent;
+  color: #1e1199;
+  font-size: 17px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid ;
+ 
+}
+
+.nav-btn.active, nav a.active {
+  border-bottom: 2px solid #1e1199;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.receta-card {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0#0005;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.receta-info h2 {
+  margin: 0;
+
+}
+
+.receta-info button {
+  margin-top: 8px;
+  background: #0a58ca;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+.botonrecetario{
+ background-color: transparent;
+  color: #1e1199;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: solid ;
+}
+
+
+img{
+    width: 20%;
+    
+}
+
+
+.receta-info h2{
+  margin-right: 200px;
+}
+
+.receta-info button{
+  margin-left: 400px;
+}
+
+.nav-btn{
+background-color: transparent;
+  color: #5548cc;
+  font-size:30px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+
+a{
+  background-color: transparent;
+  color: #1e1199;
+  font-size: 17px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
+
+}
+
+.click{
+  border: none;
+  background-color: #2f35d6;
+  color: white;
+  box-shadow: 0 0 15px 0 #0005;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.click:hover{
+  background-color: #0a78ca;
+}
+
+.card-click{
+  margin-top: 100px ;
+  text-align: center;
+  font-size: 25px;
+}
+
+.aqui{
+  color: #888;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.boton-modal {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #a7dff2;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 #0005;
+}
+
+
+
+.usuario-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.btn-usuario {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #2f35d6;
+  margin-left: 1200px;
+  margin-top: 10px;
+}
+
+.menu-desplegable {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 120px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.menu-desplegable button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0 0 6px 6px;
+}
+
+.menu-desplegable button:hover {
+  background: #888;
+  color: white;
+}
+
+
+
+
+  form {
+    width: 60%;
+    margin-top: 60px;
+    padding: 2rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  nav {
+    gap: 30px;
+  }
+
+  .boton-sesion {
+    margin-left: 0;
+  }

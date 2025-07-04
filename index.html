@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recetario Holon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="pagina-recetario">
+<header>
+<nav>
+  <button onclick="showHome()" class="botonrecetario">Recetario</button>
+  <a href="registrar.html" class="enlace"> Registrar Nueva Receta</a>
+
+  <!-- Contenedor para usuario y menú desplegable -->
+  <div id="usuario-menu" class="usuario-menu" style="display: none;">
+    <button id="btn-usuario" class="btn-usuario"></button>
+    <div id="menu-desplegable" class="menu-desplegable" style="display: none;">
+      <button id="cerrar-sesion-btn">Cerrar sesión</button>
+    </div>
+  </div>
+</nav>
+</header>
+
+    <h1>Recetario Holon</h1>
+  <main>
+  </main>
+  <div class="card-click">
+<h3 class="aqui">Aun no se encuentran recetas registradas.</h3>
+<a href="registrar.html" class="click" id="click-aqui">CLICK AQUI PARA REGISTRAR NUEVA RECETA</a>
+  </div>
+  <div id="modal-login" class="modal">
+  <div class="modal-contenido">
+    <h2>¡Bienvenido!</h2>
+    <p>Debes iniciar sesión o registrarte para acceder al recetario.</p>
+    <a href="login.html" class="boton-modal">Iniciar Sesión</a>
+    <a href="usuario.html" class="boton-modal">Registrarse</a>
+  </div>
+</div>
+
+  <script src="recetario.js"></script>
+</body>
+</html>
